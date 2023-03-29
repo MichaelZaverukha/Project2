@@ -1,0 +1,513 @@
+*{
+   box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+ }
+
+body{
+      max-width: 1600px;
+      width: 100%;
+      margin: 0px auto;
+}
+
+.header{
+   position: absolute;
+   z-index: 1;
+   &__nav{
+      margin-top: 53px;
+      display: flex;
+      align-items: center;
+      margin-left: 215px;
+   }
+   &__list{
+      margin-left: 144px;
+      display: flex;
+      gap: 70px;
+   }
+ 
+   &__link{
+      font-family: 'Source Sans Pro',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-left: 14px;
+   }
+
+   &__social{
+      margin-left: 110px;
+      display: flex;
+      gap: 20px;
+   }
+   &__click{
+      width: 9px;
+      height: 9px;
+      border: 1px solid #FFFFFF;
+      border-radius: 50%;
+      display: inline-block;
+      text-decoration: none;
+   }
+  
+   &__network-link{
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+         fill: #FFFFFF;
+      }
+   }
+   &__network-link:hover{
+      background-color: #FFFFFF;
+      transition: all 0.5s ease-in-out;
+      svg{
+         fill: #7E5AFF;
+      }
+   }
+}
+
+main{
+   max-width: 1600px;
+   width: 100%;
+   margin: 0px auto;
+   position: relative;
+}
+
+.main-header{
+   padding: 330px 340px 50px 340px;
+   background: url(../images/png/tu-tram-pham-202263\ 1.png) no-repeat, linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+   background-size: 100%;
+   margin-bottom: 100px;
+   
+   &__block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   &__title{
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 98px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   &__decription{
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.3em;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 240px;
+   }
+   &__link{
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      transition: all 0.5s ease-in-out;
+   }
+   &__link:hover{
+      background-color: #745cc9;
+      
+   }
+}
+
+.header__item:hover span{
+   background: #FFFFFF;
+}
+
+
+.projects{
+   &__line{
+      width: 100px;
+      height: 0px;
+      margin: 0px auto;
+      margin-bottom: 30px;
+      border: 1px solid #2C4058;
+   }
+   &__title{
+      @extend %titles;
+      color: #2C4058;
+      margin-bottom: 90px;
+   }
+
+   &__one{
+      display: flex;
+      position: relative;
+      gap: 330px;
+      margin-bottom: 146px;
+   }
+   &__block{
+      min-width: 585px;
+      height: 470px;
+   }
+   .blue-block{ 
+      background: #55B7FF;
+   }
+   &__text{
+      margin-top: 151px;
+   }
+   &__img-1{
+      position: absolute;
+      left: 215px;
+      top: 57px;
+   }
+   &__recognition{
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      color: #2C4058;
+   }
+   &__name{
+      @extend %titles;
+      color: #2C4058;
+      text-align: start;
+      margin-bottom: 19px;
+   }
+   &__description{
+      font-family: 'Open Sans',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #2C4058;
+      margin-bottom: 35px;
+      max-width: 470px;
+   }
+   &__button{
+      @extend %buttonborder;
+      background: none;
+      padding: 16px 41px;
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      cursor: pointer;
+      margin-bottom: 60px;
+      transition: all 0.5s ease-in-out;
+   }
+
+   &__button:hover{
+      background-color: #745cc9;
+      color: #FFFFFF;
+   }
+   &__adress{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+   }
+   &__link{
+      font-family: 'Open Sans',sans-serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: #000000;
+      text-decoration: none;
+   }
+   &__two{
+      display: flex;
+      gap: 324px;
+      flex-direction: row-reverse;
+      position: relative;
+      margin-bottom: 176px;
+   }
+   .purple-block{
+      background: #7E5AFF;
+   }
+   &__img-2{
+      position: absolute;
+      height: 470px;
+      right: 215px;
+      top: 57px;
+   }
+}
+
+.news{
+   background: url(../images/png/city\ 2\ @2x\ 1.png) bottom no-repeat, linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+   padding-top: 120px;
+   padding-bottom: 170px;
+   margin-bottom: 150px;
+   &__line{
+      width: 100px;
+      height: 0px;
+      border: 1px solid #FFFFFF;
+      margin: 0px auto;
+      margin-bottom: 30px;
+   }
+   &__title{
+      @extend %titles;
+      color: #FFFFFF;
+      margin-bottom: 90px;
+   }
+   &__list{
+      margin: 0 215px;
+   }
+  
+   &__img{
+      margin: 0;
+      margin-bottom: 30px;
+   }
+   &__performance{
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      color: #2C4058;
+      margin: 0px 20px;
+      margin-bottom: 15px;
+   }
+   &__decription{
+      font-family: 'Open Sans',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #2C4058;
+      margin: 0px 20px;
+      margin-bottom: 39px;
+   }
+   &__profile{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 0px 20px;
+      margin-bottom: 30px;
+   }
+   &__avatar{
+      border-radius: 50%;
+   }
+   &__name{
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #2C4058;
+      margin-bottom: 6px;
+   }
+   &__data{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #55B7FF;
+   }
+}
+
+.gallery{
+   margin-bottom: 150px;
+   &__line{
+      width: 100px;
+      height: 0px;
+      margin: 0px auto;
+      margin-bottom: 30px;
+      border: 1px solid #2C4058;
+   }
+   &__title{
+      @extend %titles;
+      color: #2C4058;
+      margin-bottom: 90px;
+   }
+   &__photos{
+      margin: 0 215px;
+      display: grid;
+      grid-gap:10px;
+      position: relative;
+      margin-bottom: 60px;
+   }
+   &__img-1{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+   }
+   .zoom{
+      position: absolute;
+      top: 50%;
+      left: 255px;
+      transform: translateY(-50%);
+      z-index: 5;
+   }
+   &__img-2{
+      grid-column-start: 2;
+      grid-column-end: 3;
+   }
+   &__img-3{
+      grid-column-start: 3;
+      grid-column-end: 4;
+   }
+   &__img-4{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-end: 3;
+   }
+   &__button{
+      padding: 16px 57px;
+      @extend %buttonborder;
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+      background: none;
+      margin:0 auto;
+      display: block;
+      transition: all 0.5s ease-in-out;
+   }
+   &__button:hover{
+      background-color:#2C4058;
+      color: #FFFFFF;
+   }
+}
+
+.contact{
+   position: relative;
+   margin-bottom: -3px;
+   &__map{
+         width: 100%;
+        height: 700px;
+        border: 0;
+        filter: grayscale(100%);
+   }
+   &__form{
+      position: absolute;
+      top: 400px;
+      left: 415px;
+      background-color: #FFFFFF;
+      padding: 60px 60px 69px 60px;
+      background-image: url(../images/png/minicity.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+   }
+   &__line{
+      width: 100px;
+      height: 0px;
+      border: 1px solid #2C4058;
+      margin: 0px auto;
+      margin-bottom: 30px
+   }
+   &__title{
+      @extend %titles;
+      color: #2C4058;
+      margin-bottom: 42px;
+   }
+   &__block{
+      display: flex;
+      gap: 54px;
+   }
+   &__information{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+   &__links{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      a{
+         color: #000000;
+         text-decoration: none;
+      }
+   }
+   &__links:hover a{
+      color: #7E5AFF;
+   }
+   &__interactive{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+   &__input{
+      border: none;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #2C4058;
+   }
+   &__input:active{
+      color: #000000;
+   }
+   &__button{
+      padding: 11px 34px;
+      @extend %buttonborder;
+      background: none;
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000000;
+      margin-left: 170px;
+      transition: all 0.5s ease-in-out;
+   }
+   &__button:hover{
+      background-color: #E7E7E7;
+   }
+}
+
+.footer{
+background:url(../images/png/scott-webb-176434\ 2.png), linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+padding: 206px 415px 234px 415px;
+&__information{
+   display: flex;
+   align-items: center;
+   gap: 369px;
+   margin-bottom: 41px;
+}
+&__social{
+   display: flex;
+   gap: 20px;
+}
+&__network{
+   a{
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+         fill: #FFFFFF;
+      }
+   }
+}
+&__copyright{    
+      font-family: 'Montserrat',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+}
+}

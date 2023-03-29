@@ -1,0 +1,79 @@
+.slick-slide{
+   background: #fff;
+   max-width: 370px !important;
+}
+
+.slick-list{
+ padding: 0 !important;
+}
+
+.slick-track{
+   display: flex !important;
+   gap: 30px !important;
+   margin-bottom: 40px;
+}
+
+
+.slick-prev{
+   position: absolute;
+   left: -100px;
+   top: 50%;
+   width: 40px;
+   height: 40px;
+   font-size: 0;
+   border-radius: 50%;
+   @extend %socialborder;
+   background: none;
+   background-image: url(../images/relink.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 16px 6px;
+   transform: rotate(90deg);
+   transition: all 0.5s ease-in-out;
+}
+
+.slick-next{
+   position: absolute;
+   right: -100px;
+   top: 50%;
+   width: 40px;
+   height: 40px;
+   font-size: 0;
+   border-radius: 50%;
+   @extend %socialborder;
+   background: none;
+   background-image: url(../images/relink.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 16px 6px;
+   transform: rotate(270deg);
+   transition: all 0.5s ease-in-out;
+}
+
+.slick-prev:hover{
+   background-color: #28BEF3;
+}
+
+.slick-next:hover{
+   background-color: #3987D8;
+}
+
+.slick-dots{
+   display: flex;
+   gap: 40px;
+   margin-left: 480px;
+   button{
+         border-radius: 50%;
+         font-size: 0;
+         width: 15px;
+         height: 15px;
+         border: 1px solid #fff;
+         background: none;
+   }
+}
+
+.slick-active{
+   button{
+      background: #fff;
+   }
+}
